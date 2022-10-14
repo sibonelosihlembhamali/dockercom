@@ -1,0 +1,8 @@
+consule docker command:
+docker run -d -p 8500:8500 -p 8600:8600/udp --name=badger consul agent -server -ui -node=server-1 -bootstrap-expect=1 -client="0.0.0.0"
+
+rabbitMq docker command:
+docker run -d --name ms-book-rabbitMQ -p 5672:5672 -p 5673:5673 -p 15672:15672 rabbitmq:3-management
+
+mysql docker command:
+docker run --name docker-mysql -e MYSQL_ROOT_PASSWORD=password -v C:\Users\Sibonelo\tmp:/var/lib/mysql -p 3306:3306 -d mysql
